@@ -1,0 +1,58 @@
+<div id="calculator">
+    <div id="header">
+        <button (click)="clean()">
+            C
+        </button>
+        <input readonly [value]="display" type="text">
+    </div>
+    <ul id="keyboard">
+        <li>
+            <button (click)="addNumber('7')">7</button>
+        </li>
+        <li>
+            <button (click)="addNumber('8')">8</button>
+        </li>
+        <li>
+            <button (click)="addNumber('9')">9</button>
+        </li>
+        <li>
+            <button (click)="defineOperation('/')">/</button>
+        </li>
+        <li>
+            <button (click)="addNumber('4')">4</button>
+        </li>
+        <li>
+            <button (click)="addNumber('5')">5</button>
+        </li>
+        <li>
+            <button (click)="addNumber('6')">6</button>
+        </li>
+        <li>
+            <button (click)="defineOperation('*')">*</button>
+        </li>
+        <li>
+            <button (click)="addNumber('1')">1</button>
+        </li>
+        <li>
+            <button (click)="addNumber('2')">2</button>
+        </li>
+        <li>
+            <button (click)="addNumber('3')">3</button>
+        </li>
+        <li>
+            <button (click)="defineOperation('-')">-</button>
+        </li>
+        <li>
+            <button (click)="addNumber('0')">0</button>
+        </li>
+        <li>
+            <button (click)="addNumber('.')">.</button>
+        </li>
+        <li>
+            <button (click)="calculate()">=</button>
+        </li>
+        <li>
+            <button (click)="defineOperation('+')">+</button>
+        </li>
+    </ul>
+</div>
